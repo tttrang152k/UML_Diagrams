@@ -1,0 +1,39 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Folder
+class File
+
+' Composition relationships
+Folder *-- Folder
+Folder *-- File
+
+class Folder {
+  - name : String
+  - subfolders : ArrayList<Folder>
+  - files : ArrayList<File>
+
+  + Folder() : void
+  + getName() : String
+  + setName(String name) : void
+  + removeSubfolder(String subFolderName) : void
+  + addSubfolder(String subFolderName) : void
+  + getSubfolder(String subFolderName) : Folder
+  + removeFile(File file) : boolean
+  + addFile(String fileName) : void
+  + toString() : String
+  + printFolderContents() : void
+}
+
+class File {
+  - name : String
+
+  + File(String name) : void
+  + getName() : String
+  + setName(String name) : void
+  + toString() : String
+}
+
+
+
+@enduml
