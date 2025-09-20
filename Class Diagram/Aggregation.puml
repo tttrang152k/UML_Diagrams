@@ -5,7 +5,7 @@ class Course
 class Instructor
 class Textbook
 
-' Aggregation relationships with multiplicity
+' Aggregation relationships
 Course o-- Instructor
 Course o-- Textbook
 

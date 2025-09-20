@@ -38,7 +38,6 @@ class SalariedEmployee {
   + setWeeklySalary(int weeklySalary) : void
   + toString() : String
 }
-
 class HourlyEmployee {
   - wage : int
   - hoursWorked : int
@@ -49,7 +48,6 @@ class HourlyEmployee {
   + setHoursWorked(int hoursWorked) : void
   + toString() : String
 }
-
 class CommisionEmployee {
   - commissionRate : int
   - grossSales : int
@@ -60,7 +58,6 @@ class CommisionEmployee {
   + setGrossSales(int grossSales) : void
   + toString() : String
 }
-
 class BaseEmployee {
   - baseSalary : int
 

@@ -1,0 +1,48 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "phpDemo1 : Folder" as root {
+    name = "php_demo1"
+}
+object "source : Folder" as src {
+    name = "Source Files"
+}
+object "inc : Folder" as ip {
+    name = "Include Path"
+}
+object "remote : Folder" as rf {
+    name = "Remote Files"
+}
+object "phal : Folder" as phal {
+    name = ".phalcon"
+}
+object "cache : Folder" as c {
+    name = "cache"
+}
+object "public : Folder" as pl {
+    name = "public"
+}
+object "htaccess : File" as acc {
+     name = ".htaccess"
+}
+object "htouter : File" as out {
+     name = ".htouter.php"
+}
+object "index : File" as in {
+     name = "index.html"
+}
+
+' Composition hierarchy
+root *-- src
+root *-- ip
+root *-- rf
+
+src *-- phal
+src *-- c
+src *-- pl
+src *-- acc
+src *-- out
+src *-- in
+
+@enduml
+

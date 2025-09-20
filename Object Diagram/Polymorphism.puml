@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/object-diagram
+object "ships : Ship[3]" as ships
+
+object "ships[0] : Ship" as s0 {
+    shipName = "Titanic"
+    yearBuilt = "March 31st, 1909"
+}
+object "ships[2] : CargoShip" as s1 {
+    shipName = "EverGiven"
+    yearBuilt = "September 25th, 2018"
+    cargoCapacityInTonnage = 220940
+}
+object "ships[1] : CruiseShip" as s2 {
+    shipName = "MVGemini"
+    yearBuilt = "May 30th, 1991"
+    maxNumberPassengers = 100
+}
+
+' Hierarchy
+s0 <|-- s1
+s0 <|-- s2
+
+
+@enduml

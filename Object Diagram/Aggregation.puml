@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "c1Instructor : Instructor" as i1{
+    firstName = "Nima"
+    lastName  = "Davarpanah"
+    officeNumber = "3-2636"
+}
+
+object "c1Textbook : Textbook" as t1 {
+  title = "CleanCode:A Handbook of Agile Software Craftsmanship"
+  author = "Robert Cecil Martin"
+  publisher = "Pearson"
+}
+
+object "c1 : Course" as c1 {
+    name = "CS5800 - Advanced Software Engineering"
+}
+
+' Aggregation relationships
+c1 o-- i1
+c1 o-- t1
+
+@enduml
