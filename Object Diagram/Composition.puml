@@ -40,9 +40,9 @@ root *-- rf
 src *-- phal
 src *-- c
 src *-- pl
-src *-- acc
-src *-- out
-src *-- in
+pl *-- acc
+pl *-- out
+pl *-- in
 
 @enduml
 
